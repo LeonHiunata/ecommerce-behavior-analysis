@@ -1,0 +1,23 @@
+# Data (besar, tidak masuk git)
+data/raw/
+data/processed/
+!data/sample/
+
+# Database
+*.db
+
+# Environment
+.env
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Notebook
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
