@@ -76,7 +76,7 @@ ecommerce-behavior-analysis/
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 | Tool | Purpose |
 |---|---|
@@ -88,7 +88,7 @@ ecommerce-behavior-analysis/
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ```bash
 # 1. Clone repository
@@ -111,7 +111,7 @@ pip install -r requirements.txt
 ```
 ---
 
-## 💡 Business Recommendations
+## Business Recommendations
 
 | Priority | Segment | Action | Expected Impact |
 |---|---|---|---|
