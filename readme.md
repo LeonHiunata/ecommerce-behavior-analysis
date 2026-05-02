@@ -50,22 +50,29 @@
 
 ---
 
-## Project Structure
+##  Project Structure
+
+```
 ecommerce-behavior-analysis/
-├── 📁 data/
-│   └── sample/          ← 0.5% sample data (public)
-├── 📁 notebooks/
-│   ├── 00_data_validation.ipynb
-│   ├── 01_preprocessing.ipynb
-│   ├── 02_eda_overview.ipynb
-│   ├── 03_customer_segmentation.ipynb
-│   ├── 04_revenue_analysis.ipynb
-│   ├── 05_time_pattern.ipynb
-│   ├── 06_cohort_analysis.ipynb
-│   └── 07_anomaly_detection.ipynb
-├── 📁 reports/figures/  ← All visualization outputs
-├── 📄 requirements.txt
-└── 📄 README.md
+│
+├── data/
+│   └── sample/                         ← 0.5% sample data (public)
+│
+├── notebooks/
+│   ├── 00_data_validation.ipynb        ← Data inspection & Parquet conversion
+│   ├── 01_preprocessing.ipynb          ← Cleaning & feature engineering
+│   ├── 02_eda_overview.ipynb           ← Exploratory data analysis
+│   ├── 03_customer_segmentation.ipynb  ← RFM Analysis & clustering
+│   ├── 04_revenue_analysis.ipynb       ← Revenue vs volume deep dive
+│   ├── 05_time_pattern.ipynb           ← Peak hours & flash sale slots
+│   ├── 06_cohort_analysis.ipynb        ← Retention & repeat purchase
+│   └── 07_anomaly_detection.ipynb      ← Outlier & fraud detection
+│
+├── reports/
+│   └── figures/                        ← All visualization outputs (20+ charts)
+├── requirements.txt
+└── README.md
+```
 
 ---
 
@@ -102,14 +109,6 @@ pip install -r requirements.txt
 # 5. Place CSV in data/raw/ and run notebooks in order
 # Start from 00_data_validation.ipynb
 ```
-
----
-
-## 📊 Dashboard
-
-> Tableau dashboard coming soon — will cover customer segmentation,
-> revenue breakdown, and time pattern analysis.
-
 ---
 
 ## 💡 Business Recommendations
@@ -118,9 +117,9 @@ pip install -r requirements.txt
 |---|---|---|---|
 | HIGH | At-Risk (338K users) | Win-back campaign + exclusive discount | Recover $1.76B at-risk revenue |
 | HIGH | One-time buyers | 2nd purchase trigger within 7 days | Improve Week 0→1 retention from 24.6% |
-| 🟡 MED | New Customers (340K) | Onboarding flow + personalized reco | Convert to Loyal segment |
-| 🟡 MED | Champions (532K) | Loyalty program + early access | Maintain 56.6% revenue base |
-| 🟢 LOW | Lost segment | Aggressive discount or accept churn | Selective recovery only |
+| MED | New Customers (340K) | Onboarding flow + personalized reco | Convert to Loyal segment |
+| MED | Champions (532K) | Loyalty program + early access | Maintain 56.6% revenue base |
+| LOW | Lost segment | Aggressive discount or accept churn | Selective recovery only |
 
 ---
 
